@@ -7,13 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 
     <title>Event Landing Page</title>
   </head>
   <body>
     <!--    **NAVBAR GOES HERE**    -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.mcicon.com/wp-content/uploads/2021/02/Technology_Camera_1-copy-18.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar justify-content-end">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Photographers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Venues</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -45,134 +79,113 @@
         </div>
       </div>
     </div>
-    <div class="b-example-divider"></div>
+    <!-- <div class="b-example-divider"></div> -->
 
-    <!--    **SPEAKER/CARD SECTION**    -->
-<!--      ****PLAY WITH THIS CODE MORE****    -->
- <!--   <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Locations We Will Visit</h2>
-  
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.pexels.com/photos/1728163/pexels-photo-1728163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')>
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="LOGO IMAGE GOES HERE" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                  <small>Earth</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                  <small>3d</small>
-                </li>
-              </ul>
+    <!--    **SECTION ABOVE SPEAKERS**    -->
+
+    <section class="d-flex flex-column align-items-center text-center p-3"style="height: 18vh;">
+      <h2><i class="bi bi-camera-fill mx-3"></i>The Photographers<i class="bi bi-camera-fill mx-3"></i></h2>
+      <p class="text-center mb-3">Each of our photographers have specified skills in different styles and types of photography.  The great thing about all of our shutterbugs is that they are also crazy about birds just like you!  Learn tricks of the trade, make new friends, and spot more birds!!!</p>
+    </section>
+
+<!--     ***SPEAKER SECTION***     -->
+      <section class="p-5">
+        <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <img src="https://images.pexels.com/photos/3042632/pexels-photo-3042632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top">
+                  </div>
+                  <h3 class="card-title mb-3">Jason Hernandez</h3>
+                  <p class="card-text">
+                  Book your tour with this photographer and learn their tips and tricks!
+                  </p>
+                  <a href="#" class="btn btn-warning">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-warning text-dark">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <img src="https://images.pexels.com/photos/1728163/pexels-photo-1728163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940S" class="card-img-top">
+                  </div>
+                  <h3 class="card-title mb-3">Hassan Abadi</h3>
+                  <p class="card-text">
+                    Book your tour with this photographer and learn their tips and tricks!
+                  </p>
+                  <a href="#" class="btn btn-dark">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <img src="https://images.pexels.com/photos/3768187/pexels-photo-3768187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top">
+                  </div>
+                  <h3 class="card-title mb-3">Susan Tripp</h3>
+                  <p class="card-text">
+                  Book your tour with this photographer and learn their tips and tricks!
+                  </p>
+                  <a href="#" class="btn btn-warning">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-warning text-dark">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <img src="https://images.unsplash.com/photo-1438109491414-7198515b166b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top">
+                  </div>
+                  <h3 class="card-title mb-3">Helen Bright</h3>
+                  <p class="card-text">
+                   Book your tour with this photographer and learn their tips and tricks!
+                  </p>
+                  <a href="#" class="btn btn-dark">Book Now</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-  
+      </section>
+
+          <!--   **GET YOUR TICKETS SECTION**   -->
+    <div class="d-flex flex-column justify-content-center align-items-center my-5 p-4  border-top border-bottom border-5 border-black bg-warning" id="tickets">
+      <h2 class="fw-bolder display-4 text-black">Get Your Tickets Today!</h2>
+      <p class="lead fw-bold text-dark">With the price of each ticket includes: accomodations while traveling, charging stations along the way, extra batteries, unlimited access to the professional photographers in your group and lifelong access to our private blog and demo sessions.</p> 
+      <a class="btn btn-secondary btn-md " href="#" role="button">Buy Me</a>
+    </div>
+    <!--   **MAP AND VENUE AND ADDRESS**    -->
+    <div class="container overflow-hidden my-4">
+      <div class="row gx-4">
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
+         <div class="p-3 border bg-light"><h2 class="font-weight-bold my-3">The Start Venue</h2><p class="my-5"> <span class="font-weight-bold">We will start off in Bakersfield, CA at The Park at Riverwalk</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13016.39220414624!2d-119.12753052211934!3d35.353212884350924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea43e4d79f8329%3A0x693e5ac5d2c9b95e!2sThe%20Park%20at%20River%20Walk!5e0!3m2!1sfr!2sus!4v1630463635257!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
-  
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div class="p-3 border bg-light"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Camera and Lenses"></div>
         </div>
       </div>
-    </div>   -->
-
- <!--   <div class="card" style="width:20rem;">
-      <img class="card-img-top img-fluid" src="https://img.webnots.com/2017/04/Bootstrap-Card-Image.png" alt="card image">
-      <div class="card-body">
-      <h4 class="card-title">Card Title</h4>
-      <p class="card-text">This is basic card with image on top, title, description and button.</p>
-      <a href="#" class="btn btn-primary">Button</a>
-      </div>
-      </div>   -->
-
-
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div class="feature-icon card">
-              <img src="https://images.pexels.com/photos/1728163/pexels-photo-1728163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940S" class="card-img-top">
-            </div>
-            <h2>Featured title</h2>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+    </div>
+<!--  **FOOTER**   -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
             </a>
+            <span class="text-muted">&copy; 2021</span>
           </div>
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <img src="https://images.pexels.com/photos/3768187/pexels-photo-3768187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top">
-            </div>
-            <h2>Featured title</h2>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-            </a>
-          </div>
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <img src="https://images.pexels.com/photos/3042632/pexels-photo-3042632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top">
-            </div>
-            <h2>Featured title</h2>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <a href="#" class="icon-link">
-              <i class="fab fa-facebook"></i>
-            </a>  
-              <br>
-            <a href="#" class="icon-link"> 
-              <i class="fab fa-instagram-square"></i>
-            </a>  
-              <br>
-            <a href="#" class="icon-link">  
-              <i class="fab fa-twitter"></i>
-            </a>  
-          </div>
-        </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+          </ul>
+        </footer>
       </div>
-
-
 
  <!--  script tags at bottom of body  -->   
    <script src="https://kit.fontawesome.com/42dc46496f.js" crossorigin="anonymous"></script>
